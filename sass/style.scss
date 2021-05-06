@@ -1,2 +1,480 @@
-
-
+body {
+    font-family: 'Lato', sans-serif;
+    background: url("../images/background1.png") no-repeat;
+    background-color: #D3D5D0;
+    background-size: contain;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    body {
+      background-size: 108%;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    body {
+      background-size: 120%;
+    }
+  }
+  
+  .logo {
+    margin-top: 40px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .logo {
+      margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .introduce {
+      margin-top: 370px;
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .introduce {
+      margin-top: 300px;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .introduce {
+      margin-top: 320px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .introduce {
+      margin-top: 240px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .introduce {
+      margin-top: 220px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .introduce {
+      margin-top: 170px;
+    }
+  }
+  
+  .introduce h2 {
+    font-weight: bold;
+    color: #074885;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 33px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .introduce h2 {
+      line-height: 46px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .introduce h2 {
+      font-size: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .introduce h2 {
+      font-size: 48px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .introduce h2 {
+      font-size: 38px;
+      line-height: 44px;
+    }
+  }
+  
+  .introduce h2 small {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .introduce h2 small {
+      font-size: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .introduce h2 small {
+      font-size: 36px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .introduce h2 small {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+  
+  .introduce h2 small span {
+    color: #EC681B;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .introduce h2 small span {
+      display: inline;
+    }
+  }
+  
+  .introduce .step {
+    margin-bottom: 14px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .introduce .step .number {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: #EC681B;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+    color: #fff;
+    padding-left: 5px;
+    padding-top: 1.5px;
+  }
+  
+  .introduce .step h4 {
+    margin: 0;
+    line-height: 28px;
+    font-size: 24px;
+    color: #003567;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .introduce .step h4 {
+      width: calc(100% - 50px);
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .introduce .step h4 {
+      font-size: 21px;
+    }
+  }
+  
+  .formBox {
+    width: 100%;
+    height: auto;
+    margin-top: 28px;
+    margin-bottom: 250px;
+  }
+  
+  .formBox .description {
+    min-height: 82px;
+    background: #074885;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .formBox .description h3 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    line-height: 26px;
+    width: 100%;
+    font-weight: 400;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .formBox .description h3 {
+      font-size: 20px;
+    }
+  }
+  
+  .formBox form {
+    height: calc(100% - 70px);
+    width: 100%;
+    background: #EC681B;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 24px 27.5px;
+  }
+  
+  .formBox form label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .formBox form label {
+      font-size: 13px;
+    }
+  }
+  
+  .formBox form label small {
+    font-size: 13px;
+    font-style: italic;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .formBox form label small {
+      font-size: 12px;
+    }
+  }
+  
+  .formBox form label[for=message] {
+    width: 100%;
+    padding: 7px 0px 5px;
+    margin: 0px;
+  }
+  
+  .formBox form textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    resize: none;
+    padding: 12px;
+  }
+  
+  .formBox form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .formBox form .form-check-label {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .formBox form textarea {
+    border: 0;
+  }
+  
+  .formBox form input[type=text], .formBox form input[type=email] {
+    border-radius: 4px;
+    height: 36px;
+    padding: 7.5px 12px;
+    border: none;
+    margin: none;
+    width: 100%;
+  }
+  
+  .formBox form input[type=text]::placeholder, .formBox form input[type=email]::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  .formBox form .box {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    margin-top: 25px;
+  }
+  
+  .formBox form .recaptch {
+    display: block;
+    float: left;
+    margin-right: 19px;
+  }
+  
+  .formBox form button {
+    background: #074885;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    padding: 1.2rem 1rem;
+    transition: all .3s ease;
+    will-change: color, background-color;
+  }
+  
+  .formBox form button:hover {
+    background-color: #fff;
+    color: #074885;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .formBox form button {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .formBox form button {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  
+  .morecontent span {
+    display: none;
+  }
+  
+  .morelink {
+    display: inline;
+    color: #FFD95D;
+  }
+  
+  .invalid-feedback {
+    margin-top: 0;
+    color: #740000;
+  }
+  
+  input.form-check-input {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+  }
+  
+  .personalData {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 25px;
+  }
+  
+  .personalData .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  .personalData input ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  .personalData input:checked ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  .personalData .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .personalData input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .personalData .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 14px;
+    border: solid #003874;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .personalData p {
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(100% - 50px);
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+  }
+  
+  .cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #074885;
+    padding: 32px 0;
+    text-align: center;
+    display: none;
+  }
+  
+  .cookies__message {
+    text-align: left;
+    font: Regular 16px/21px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  
+  .cookies .btn {
+    margin: 5px;
+    border-radius: 8px;
+    padding: .5rem 1.2rem;
+  }
+  
+  .cookies .btn-primary {
+    background: #fff;
+    color: #074885;
+    border-color: #fff;
+  }
+  
+  .cookies .btn-outline-primary {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .cookies .btn-outline-primary:hover {
+    background: #fff;
+    color: #074885;
+    border-color: #fff;
+  }
+  
+  .message-after {
+    background-color: #EC681B;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 330px;
+  }
+  
+  .message-after h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  
+  .message-after p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .form-check-input.is-valid ~ .form-check-label, .was-validated .form-check-input:valid ~ .form-check-label {
+    color: #fff;
+  }
+  
+  .form-check-input.is-invalid ~ .form-check-label, .was-validated .form-check-input:invalid ~ .form-check-label {
+    color: #fff;
+  }
